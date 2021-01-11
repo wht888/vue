@@ -1,0 +1,123 @@
+/* 改变主题色变量 */
+$--color-primary: #4451b1;
+$--color-fff: #fff;
+$--color-title: rgba(0, 0, 0, 0.85);
+$--color-text: rgba(0, 0, 0, 0.65);
+$--color-text2: rgba(0, 0, 0, 0.45);
+$--color-disable: rgba(0, 0, 0, 0.25);
+$--color-border: rgba(0, 0, 0, 0.15);
+$--color-dividers: rgba(0, 0, 0, 0.06);
+$--color-background: rgba(0, 0, 0, 0.04);
+$--color-tableHeader: rgba(0, 0, 0, 0.02);
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+@import "./base.scss";
+
+/* 改放大图片右上角关闭按钮颜色 */
+.el-image-viewer__close {
+    color: #fff;
+}
+.preview-img .el-image__preview {
+    opacity: 0;
+}
+
+/* 改表格表头背景颜色和字体 */
+.el-table thead th {
+    background: #fafafa;
+    color: $--color-title;
+    font-weight: normal;
+}
+
+/* 改表格字体和颜色 */
+.el-table tr td {
+    color: $--color-title;
+}
+.el-table tr.hover-row td {
+    background: rgba(68, 81, 177, 0.08) !important;
+    color: $--color-title;
+}
+.el-table tr:hover td {
+    background: rgba(68, 81, 177, 0.08) !important;
+    color: $--color-title;
+}
+
+.el-button--primary.is-plain {
+    background-color: #fff;
+}
+
+/*改表单*/
+.el-form-item--small.el-form-item,
+.el-form-item--mini.el-form-item {
+    margin-bottom: 0.16rem;
+}
+.el-form--label-top .el-form-item__label {
+    padding-bottom: 0;
+}
+.el-select {
+    width: 100%;
+}
+/* 改弹出框 */
+.el-dialog__body {
+    padding: 0.16rem;
+}
+
+.el-dialog__header {
+    border-bottom: 1px solid $--color-dividers;
+}
+
+.el-dialog__title {
+    font-size: 14px;
+    line-height: 0.24rem;
+}
+
+.el-dialog__header {
+    padding: 0.16rem;
+}
+
+.el-dialog__headerbtn {
+    top: 0.16rem;
+    right: 0.16rem;
+}
+
+.el-divider {
+    background: $--color-dividers !important;
+}
+.el-timeline {
+    font-size: inherit;
+}
+.el-message-box__title {
+    font-size: 14px;
+}
+.el-page-header__content {
+    font-size: 14px;
+}
+.el-page-header {
+    line-height: 18px;
+}
+.el-step.is-simple .el-step__title {
+    font-size: 14px;
+}
+.el-step.is-simple .el-step__arrow::before {
+    transform: rotate(-45deg) translateY(-2px);
+}
+.el-step.is-simple .el-step__arrow::after {
+    transform: rotate(45deg) translateY(2px);
+}
+.el-step.is-simple .el-step__arrow::before,
+.el-step.is-simple .el-step__arrow::after {
+    height: 8px;
+}
+
+.el-steps--simple {
+    padding: 0.16rem;
+}
+.el-step.is-simple:not(:last-of-type) .el-step__title {
+    max-width: none;
+}
+
+.el-link--inner .el-image__error {
+    display: none !important;
+}
